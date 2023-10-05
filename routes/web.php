@@ -26,5 +26,13 @@ Route::get('/', function () {
 
 Route::get('/students', [StudentController::class,'index']);
 Route::get('/class', [ClassController::class,'index']);
+// Route::get('/daftar', [ClassController::class,'index']);
+
+Route::get('/daftar', function () {
+    return view('daftar', [
+        'name' => 'Ahmad Asyhari',
+    ]);
+});
+
 
 
