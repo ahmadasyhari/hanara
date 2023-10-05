@@ -3,6 +3,8 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\StudentController;
 use App\Http\Controllers\ClassController;
+use App\Http\Controllers\RegisterController;
+
 
 
 /*
@@ -26,13 +28,21 @@ Route::get('/', function () {
 
 Route::get('/students', [StudentController::class,'index']);
 Route::get('/class', [ClassController::class,'index']);
-// Route::get('/daftar', [ClassController::class,'index']);
+Route::get('/register', [RegisterController::class,'create']);
+Route::get('/register/create', [RegisterController::class, 'create'])->name('register.create');
+Route::post('/register/store', [RegisterController::class, 'store'])->name('register.store');
+
+
+
+
+
 
 Route::get('/daftar', function () {
     return view('daftar', [
         'name' => 'Ahmad Asyhari',
     ]);
 });
+
 
 
 

@@ -26,7 +26,7 @@
                 <a class="nav-link" href="/class">Kelas</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link" href="/daftar">Pendaftaran</a>
+                <a class="nav-link" href="/register">Rigister</a>
                 </li>
             </ul>
             </div>
